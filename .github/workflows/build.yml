@@ -6,7 +6,7 @@ on:
       - '*'         # matches every branch
       - '*/*'       # matches every branch containing a single '/'
       - '!master'   # excludes master
-      - '!staging'   # excludes master
+      - '!staging'  # excludes master
 
 jobs:
   build:
