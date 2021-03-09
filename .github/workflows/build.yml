@@ -38,4 +38,10 @@ jobs:
       - name: Build site
         run: |
           make _site
+          
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.0.4
+        with:
+          args: --verbose --no-progress _site/*.html
+      
 
