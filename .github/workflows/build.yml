@@ -31,14 +31,10 @@ jobs:
       - name: Update gems
         run: |
           gem install bundler
-          bundle install --jobs 4 --retry 3
-      # - name: Test site
-      #   run: |
-      #     bundle exec rake test:production
+          bundle install --jobs 4 --retry 3 
       - name: Build site
         run: |
           make _site
-          
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.0.4
         with:
